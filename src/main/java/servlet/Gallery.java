@@ -3,6 +3,7 @@ package servlet;
 import java.io.File;
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -45,11 +46,14 @@ public class Gallery extends HttpServlet {
             session.setAttribute("username", username);
             session.setAttribute("map", map);
         }
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/gallery.jsp");
+        dispatcher.forward(request, response);
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        doPost(request, response);
     }
 
 }
