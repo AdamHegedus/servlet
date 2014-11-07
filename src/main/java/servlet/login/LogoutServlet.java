@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class LoginServlet extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
 
     /* (non-Javadoc)
      * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
@@ -26,18 +26,12 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
 
-        String username;
-        if (session.getAttribute("username") == null) {
-            username = request.getParameter("username");
-        } else {
-            username = (String) session.getAttribute("username");
-        }
-
         synchronized (session) {
-            session.setAttribute("username", username);
+            session.setAttribute("username", null);
+            session.invalidate();
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/logged-in.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/index.jsp");
         dispatcher.forward(request, response);
     }
 
