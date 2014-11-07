@@ -4,6 +4,11 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+  	<param-name>storageDirectory</param-name>
+	<param-value>storage</param-value>
+  </context-param>
   
   <servlet>
   	<servlet-name>Index</servlet-name>
@@ -20,7 +25,7 @@
   
   <servlet-mapping>
   	<servlet-name>Index</servlet-name>
-  	<url-pattern>/</url-pattern>
+  	<url-pattern>/index</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>Login</servlet-name>
@@ -31,6 +36,8 @@
   	<url-pattern>/logout</url-pattern>
   </servlet-mapping>
   
-  
+    <welcome-file-list>
+  	<welcome-file>index</welcome-file>
+  </welcome-file-list>
   
 </web-app>

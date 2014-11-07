@@ -14,5 +14,8 @@
 	<form action="logout" method="post">
 		<input type="submit" value="logout" title="logout">
 	</form>
+	
+	<tags:uploaded-files>
+	</tags:uploaded-files>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<taglib xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd"
+ xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ version="2.1">
+  <tlib-version>1.2</tlib-version>
+  <uri>map</uri>
+  
+  <short-name>Map implementation</short-name>
+  
+  <tag>
+    <name>map</name>
+    <description>map</description>
+    <tag-class>servlet.storage.MapData</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+    	<name>data</name>
+    	<required>true</required>
+    	<rtexprvalue>false</rtexprvalue>
+    	<type>java.lang.String</type>
+    </attribute>
+    <attribute>
+    	<name>map</name>
+    	<required>true</required>
+    	<rtexprvalue>true</rtexprvalue>
+    	<type>java.util.Map</type>
+    </attribute>
+    
+  </tag>
+</taglib>

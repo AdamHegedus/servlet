@@ -6,12 +6,12 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Welcome</title>
+	<title>Gallery</title>
 </head>
 <body>
-	<h1>Welcome</h1>
-	<a href="login">Login</a>
-	<a href="gallery">Gallery</a>
-	
+	<h1>Gallery</h1>
+		
+	<tags:uploaded-files>
+	</tags:uploaded-files>
 </body>
 </html>
