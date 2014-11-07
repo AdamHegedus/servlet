@@ -5,8 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Welcome</title>
+	<tags:header title="Index"></tags:header>
 </head>
 <body>
 	<h1>Welcome</h1>

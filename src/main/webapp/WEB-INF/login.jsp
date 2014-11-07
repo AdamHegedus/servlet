@@ -5,12 +5,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Login</title>
+	<tags:header title="Login"></tags:header>
 </head>
 <body>
 	<h1>Login</h1>
-	<p>Log in to upload new files to the gallery.</p>
 	
 	<form action="login" method="post">
 		<label for="username">Username</label><br>

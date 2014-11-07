@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -44,9 +43,9 @@ public class UploadServlet extends HttpServlet {
                     }
                 }
 
-                RequestDispatcher dispatcher = request.getRequestDispatcher("/gallery");
-                dispatcher.forward(request, response);
-                //response.sendRedirect("/gallery");
+                //RequestDispatcher dispatcher = request.getRequestDispatcher("/gallery");
+                //dispatcher.forward(request, response);
+                response.sendRedirect("gallery");
 
             } catch (FileUploadException e) {
                 e.printStackTrace();
