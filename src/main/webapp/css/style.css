@@ -8,10 +8,10 @@ body {
 
 #lightbox {
 	margin: 10px auto;
-	width: 520px; 
-	border-bottom: 1px solid #ccc;
+	/*width: 520px; 
+	/*border-bottom: 1px solid #ccc;*/
 }
-#lightbox h1 {
+#lightbox h1, h1 {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 10px 0;
@@ -22,14 +22,29 @@ body {
 	border-left: 2px solid rgba(255, 255, 255, 0.65);
 	border-right: 2px solid rgba(255, 255, 255, 0.65);
 }
+
+h2 {
+	text-transform: uppercase;
+	padding: 10px 0;
+	margin: 20px 0;
+	color: white;
+	font-size: 24px;
+}
+
+input[type="file"] {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+
 #lightbox ul {
 	overflow: hidden;
+	
 }
 /*Image styles*/
 #lightbox ul li {
 	float: left;
 	padding: 10px;
-	background: #fff;
+	background: black;
 	margin: 0 20px 20px 0;
 	list-style-type: none;
 	position: relative;
@@ -37,15 +52,19 @@ body {
 }
 /*No right margin for images in the 2nd column*/
 #lightbox ul li:nth-child(even) {
-	margin-right: 0;
+	/*margin-right: 0;*/
 }
 #lightbox ul li img {
-	display: block;
+	/*display: block;*/
+	max-height: 320px;
+	max-width: 320px;
+	text-align: left;
 }
 
 /*Image titles*/
 #lightbox .image_title {
-	width: 250px; height: 175px;
+	width: 250px;
+	height: 175px;
 	background: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 0; left: 0;
@@ -69,7 +88,7 @@ body {
 }
 /*Zoom icon over each title using iconfont and pseudo elements*/
 #lightbox .title::before {
-	content: 'L';
+	/*content: 'L';*/
 	font-family: websymbols;
 	font-size: 24px;
 	color: #fff;

@@ -26,6 +26,10 @@
   	<servlet-name>Gallery</servlet-name>
   	<servlet-class>servlet.Gallery</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Upload</servlet-name>
+  	<servlet-class>servlet.storage.UploadServlet</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>Index</servlet-name>
@@ -42,6 +46,10 @@
   <servlet-mapping>
   	<servlet-name>Gallery</servlet-name>
   	<url-pattern>/gallery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Upload</servlet-name>
+  	<url-pattern>/upload</url-pattern>
   </servlet-mapping>
   
     <welcome-file-list>
