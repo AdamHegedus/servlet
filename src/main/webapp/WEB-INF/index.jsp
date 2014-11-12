@@ -8,9 +8,12 @@
 	<tags:header title="Index"></tags:header>
 </head>
 <body>
-	<h1>Welcome</h1>
-	<a href="login">Login</a>
-	<a href="gallery">Gallery</a>
-	
+	<h1>Welcome!</h1>
+	<tags:nav></tags:nav>
+	<p>This is a webapp, which serves as a gallery. You have to log in to upload new pictures.</p>
+	<tags:loginForm>
+	</tags:loginForm>
+	<tags:logoutForm>
+	</tags:logoutForm>
 </body>
 </html>

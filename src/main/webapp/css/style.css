@@ -3,8 +3,75 @@ body {
 	/*background: url("http://thecodeplayer.com/uploads/media/sunsky_m.png") center center fixed;
 	background-size: cover;*/
 	font-family: arial, verdana, tahoma;
-	background-color: black;
+	background-color: #333333;
 }
+
+#nav ul {
+	display: block;
+	background: rgba(255, 255, 255, 0.1);
+	border-left: 2px solid rgba(255, 255, 255, 0.65);
+	border-right: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+#nav ul li {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	min-width: 120px;
+	line-height: 2;
+}
+
+#nav ul li a {
+	display: inline-block;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #fefefe;
+	
+}
+
+#nav ul li a:hover {
+	background: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+	color: #ffffff;
+	
+}
+
+.login {
+	display: block;
+	background: rgba(255, 255, 255, 0.1);
+	margin: auto;
+}
+
+.login * {
+	margin: 5px;
+}
+.login label {
+	float: left;
+	width: 160px;
+	color: #fefefe;
+	padding: 5px;
+	
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	width: 160px;
+	padding: 5px;
+	clear: left;
+	
+}
+
+.login input[type="submit"] {
+	width: 160px;
+	padding: 5px;
+	clear: left;
+}
+
+p {
+	color: #cccccc;
+}
+
 
 #lightbox {
 	margin: 10px auto;

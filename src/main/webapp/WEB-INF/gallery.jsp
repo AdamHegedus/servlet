@@ -9,12 +9,10 @@
 </head>
 <body>
 	<h1>Gallery</h1>
+	<tags:nav></tags:nav>
 	
 	<h2>Upload new:</h2>
-	<form action="upload" method="post" enctype="multipart/form-data">
-		<input type="file" name="file" id="file" title="Select file to upload">
-		<input type="submit" value="Upload">
-	</form>
+	<tags:uploadForm></tags:uploadForm>
 	
 	<hr>
 	<h2>Uploaded Files:</h2>

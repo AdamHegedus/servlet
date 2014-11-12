@@ -28,6 +28,7 @@ public class LogoutServlet extends HttpServlet {
 
         synchronized (session) {
             session.setAttribute("username", null);
+            session.setAttribute("loginStatus", false);
             session.invalidate();
         }
 
